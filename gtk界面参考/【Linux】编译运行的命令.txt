@@ -1,0 +1,6 @@
+//以下两行代码，可以编译、执行Linux环境下的xxx.c格式的C程序。
+//亦可编译、执行基于gtk图形界面的C程序。
+//P.S：若提示权限不足，可控制台输入su，切换至root权限执行。
+
+gcc -o mysm4  mysm4.c `pkg-config --cflags --libs gtk+-2.0`  //编译，生成mysm4文件
+./mysm4   //执行mysm4文件
